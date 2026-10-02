@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Patas Unidas</title>
+    <link rel="stylesheet" href="/projetos/css/style.css">
+    <script src="../javascript/script.js"></script>
+
+</head>
+
+<body class="cadastro">
+
+    <header>
+        <nav class="navbar">
+            <ul>
+            <li><a href="/projetos/html/index.html">Sobre Nós</a></li>
+            <li><a href="/projetos/html/projetos.html">Projetos</a></li>
+            <li><a href="/projetos/html/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2 class="cadastro-titulo">Cadastro de Voluntário</h2>
+
+        <form action="#" method="post">
+
+            <!-- Dados pessoais -->
+            <fieldset class="dados-pessoais">
+
+                <label for="nome">Nome completo:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome completo"
+                    required
+                >
+
+                <label for="cpf">CPF:</label>
+
+                <input
+                    type="text"
+                    id="cpf"
+                    name="cpf"
+                    placeholder="000.000.000-00"
+                    pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                    maxlength="14"
+                    required
+                >
+
+                <label for="data-nascimento">Data de Nascimento:</label>
+
+                <input
+                    type="date"
+                    id="data-nascimento"
+                    name="data-nascimento"
+                    required
+                >
+
+            </fieldset>
+
+
+            <!-- Dados de contato -->
+            <fieldset class="dados-contato">
+
+                <label for="telefone">Telefone:</label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(00) 00000-0000"
+                    pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                    maxlength="15"
+                    required
+                >
+
+                <label for="cep">CEP:</label>
+
+                <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    placeholder="00000-000"
+                    pattern="[0-9]{5}-[0-9]{3}"
+                    maxlength="9"
+                    required
+                >
+
+                <label for="email">E-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Digite seu e-mail"
+                >
+
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+<section class="feedback-item">
+
+    <h3>Modal</h3>
+
+    <button type="button" id="abrirModal">
+        Abrir modal
+    </button>
+
+    <dialog id="janelaModal">
+
+        <h2>Cadastro enviado!</h2>
+
+        <p>
+            Obrigado por fazer parte do Patas Unidas.
+        </p>
+
+        <button type="button" id="fecharModal">
+            Fechar
+        </button>
+
+    </dialog>
+
+</section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Patas Unidas</p>
+</footer>
+
+</body>
+</html>
