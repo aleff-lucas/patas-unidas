@@ -130,7 +130,7 @@ body.index {
     position: absolute;
 
     left: 35%;
-    top: 750px;
+    top: 900px;
 
     display: flex;
     flex-wrap: wrap;
@@ -208,9 +208,7 @@ body.projetos {
 .foto-projeto img {
     width: 450px;
     height: 450px;
-
     object-fit: cover;
-
     border-radius: 100%;
 }
 
@@ -220,11 +218,8 @@ body.projetos {
 
 .projetos #rodape {
     padding: 30px;
-
     text-align: center;
-
     color: var(--cor-secundaria);
-
     font-size: var(--fonte-2);
 }
 
@@ -256,7 +251,7 @@ body.cadastro {
 }
 
 
-/* Área principal do cadastro */
+/* Área do cadastro */
 
 .cadastro-area {
     width: 90%;
